@@ -9,7 +9,7 @@ const UserCard = function ({ userInfo }) {
       <Card.Img variant="top" src={picture.large} />
       <Card.Body>
         <Card.Title>
-          {name.title + name.first + name.last}
+          {`${name.first} ${name.last}`}
         </Card.Title>
         <Badge bg="primary">{gender}</Badge>
       </Card.Body>
