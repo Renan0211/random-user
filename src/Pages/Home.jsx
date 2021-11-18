@@ -6,7 +6,7 @@ const Home = function () {
   const [usersState, setUsersState] = useState([]);
   useEffect(() => {
     fetchUsers(100).then((data) => setUsersState(data));
-  });
+  }, [usersState]);
   console.log(usersState);
   return (
     <Container />
