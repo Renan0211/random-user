@@ -9,7 +9,7 @@ const Home = function () {
     API.fetchUsers(100).then((data) => setUsersState(data));
   }, []);
   return (
-    <Container>
+    <Container className="d-flex flex-wrap">
       {usersState.map((user) => <UserCard userInfo={user} key={user.id.value} />)}
     </Container>
   );

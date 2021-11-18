@@ -5,7 +5,7 @@ import { Badge, Card } from 'react-bootstrap';
 const UserCard = function ({ userInfo }) {
   const { picture, name, gender } = userInfo;
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '18rem' }} className="m-3">
       <Card.Img variant="top" src={picture.large} />
       <Card.Body>
         <Card.Title>
