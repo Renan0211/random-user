@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import fetchUsers from '../Util/api';
+import UserCard from '../Components/UserCard';
+import API from '../Util/api';
 
 const Home = function () {
   const [usersState, setUsersState] = useState([]);
   useEffect(() => {
-    fetchUsers(100).then((data) => setUsersState(data));
-  }, [usersState]);
-  console.log(usersState);
+    API.fetchUsers(100).then((data) => setUsersState(data));
+  }, []);
   return (
-    <Container />
+    <Container>
+      {usersState.map((user) => <UserCard userInfo={user} key={user.id.value} />)}
+    </Container>
   );
 };
 

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Badge, Card } from 'react-bootstrap';
 
@@ -14,6 +15,22 @@ const UserCard = function ({ userInfo }) {
       </Card.Body>
     </Card>
   );
+};
+
+UserCard.propTypes = {
+  userInfo: PropTypes.shape({
+    picture: PropTypes.shape({
+      large: PropTypes.string,
+      medium: PropTypes.string,
+      thumbnail: PropTypes.string,
+    }),
+    name: PropTypes.shape({
+      title: PropTypes.string,
+      first: PropTypes.string,
+      last: PropTypes.string,
+    }),
+    gender: PropTypes.string,
+  }).isRequired,
 };
 
 export default UserCard;
