@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Badge, Card } from 'react-bootstrap';
+import {
+  Badge, Card, Container, Button,
+} from 'react-bootstrap';
 
 const UserCard = function ({ userInfo }) {
   const { picture, name, gender } = userInfo;
@@ -11,7 +13,10 @@ const UserCard = function ({ userInfo }) {
         <Card.Title>
           {`${name.first} ${name.last}`}
         </Card.Title>
-        <Badge bg="primary">{gender}</Badge>
+        <Container className="d-flex justify-content-between align-items-center">
+          <Badge bg="info">{gender}</Badge>
+          <Button variant="primary" className="text-white">Saiba mais</Button>
+        </Container>
       </Card.Body>
     </Card>
   );
