@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {
-  Badge, Card, Container, Button,
+  Badge, Card, Container,
 } from 'react-bootstrap';
+import UserOffCanvas from './UserOffCanvas';
 
 const UserCard = function ({ userInfo }) {
   const { picture, name, gender } = userInfo;
@@ -15,7 +16,7 @@ const UserCard = function ({ userInfo }) {
         </Card.Title>
         <Container className="d-flex justify-content-between align-items-center">
           <Badge bg="info">{gender}</Badge>
-          <Button variant="primary" className="text-white">Saiba mais</Button>
+          <UserOffCanvas userInfo={userInfo} placement="bottom" />
         </Container>
       </Card.Body>
     </Card>
