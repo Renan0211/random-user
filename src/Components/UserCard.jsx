@@ -16,7 +16,7 @@ const UserCard = function ({ userInfo }) {
         </Card.Title>
         <Container className="d-flex justify-content-between align-items-center">
           <Badge bg="info">{gender}</Badge>
-          <UserOffCanvas userInfo={userInfo} placement="bottom" />
+          <UserOffCanvas userInfo={userInfo} placement="bottom" scroll />
         </Container>
       </Card.Body>
     </Card>
