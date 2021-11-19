@@ -3,7 +3,7 @@
 
 A ideia desse projeto foi fazer uma página que consumiria a API [Random User Generator](https://randomuser.me/) e mostraria as informações dos usuários. Esse projeto foi desenvolvido por mim durante um processo seletivo na [Colab](https://www.colab.re/).
   
-![print da aplicação](/public/Captura de tela de 2021-11-19 11-14-52.png) 
+![print da aplicação](https://github.com/Renan0211/random-user/blob/6ecbf576ebeb194a5fa776505f1a1c66a1390b2a/public/Captura%20de%20tela%20de%202021-11-19%2011-14-52.png) 
 
 # Sumário
 - [Como foi desenvolver esse projeto](#como-foi-desenvolver-esse-projeto)
