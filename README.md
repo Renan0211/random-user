@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Bem vindo ao meu projeto `Random User` :smile:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+A ideia desse projeto foi fazer uma página que consumiria a API [Random User Generator](https://randomuser.me/) e mostraria as informações dos usuários. Esse projeto foi desenvolvido por mim durante um processo seletivo na [Colab](https://www.colab.re/).
+  
+  
 
-In the project directory, you can run:
+# Sumário
+- [Como foi desenvolver esse projeto](#como-foi-desenvolver-esse-projeto)
 
-### `npm start`
+- [Como rodar o projeto](#como-rodar-o-projeto)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+# Como foi desenvolver esse projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O desenvolvimento desse projeto não foi muito desafiador como um todo, utilizei tecnologias as quais eu já estava acostumado: [React](https://pt-br.reactjs.org/), [Bootstrap](https://getbootstrap.com/), [React-Bootstrap](https://react-bootstrap.github.io/).
 
-### `npm run build`
+Apesar de ter utilizado tecnologias que estou acostumado tentei duas coisas novas: alterei a cor padrão da classe `primary` do Bootstrap e usei o componente de `OffCanvas` do React-Bootstrap. Essas duas partes foram as mais desafiadoras. 
+Principalmente a parte de alterar a cor padrão do Bootstrap, como é possível ver pelo histórico de commits. Eu nunca tinha feito isso com sucesso e não sou muito acostumado a usar variáveis em CSS, então me perdi um pouco nessa parte mas consegui resolver no final.
+A parte de usar o OffCanvas foi muito legal, já havia algum tempo que eu queria utilizar ela em algum projeto e nesse a oportunidade perfeita surgiu. A criação do OffCanvas em si não foi tão difícil, mas eu sofri um pouco na estilização dele. Meu erro foi tentar usar as classes de flex-box do Bootstrap para fazer as três colunas com informações do usuário sendo que o próprio Bootstrap e o React-Bootstrap oferecem componentes que servem exatamente para isso: fazer colunas. Depois que percebi isso e decidi usar os componentes `Row` e `Col` do React-Bootstrap o resultado desejado veio com facilidade.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+O resultado final ficou do jeito que eu queria: uma página inicial com cards dos usuários e a imagem deles bem evidente, mostrando o rosto de cada um deles. Mas também é possível clicar no botão de "Saiba mais" e ter mais informações sobre o usuário. 
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Como rodar o projeto
 
-### `npm run eject`
+Você pode checkar o projeto online [aqui](https://renan0211.github.io/). Caso prefira rodar ele localmente, siga as instruções abaixo.
+:warning: Para essas instruções é considerado que você está utilizando o linux como sistema operacional. :warning:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone o repositório:
+	```bash
+	git clone git@github.com:Renan0211/random-user.git
+	```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. Entre no diretório do projeto
+	```bash
+	cd random-user
+	```
+3. Instale as dependências
+	```bash
+	npm install
+	```
+4. Rode o projeto :grin:
+	```bash
+	npm start
+	```
+  
