@@ -11,7 +11,6 @@ const UserOffCanvas = function ({ userInfo, placement, scroll }) {
   const {
     picture, name, email, phone, cell, location, dob,
   } = userInfo;
-  console.log(picture);
   return (
     <div>
       <Button variant="primary" onClick={handleShow} className="me-2">
