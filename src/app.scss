@@ -1,5 +1,5 @@
+// Your variable overrides
+$primary: #520DC2;
 
-  @import '~bootstrap/scss/bootstrap.scss';
-
-
-// Import Bootstrap and its default variables
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
