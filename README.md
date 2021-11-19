@@ -27,8 +27,6 @@ O resultado final ficou do jeito que eu queria: uma página inicial com cards do
 
 # Como rodar o projeto
 
-Você pode checkar o projeto online [aqui](https://renan0211.github.io/). Caso prefira rodar ele localmente, siga as instruções abaixo.
-:warning: Para essas instruções é considerado que você está utilizando o linux como sistema operacional. :warning:
 
 1. Clone o repositório:
 	```bash
